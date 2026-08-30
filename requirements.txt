@@ -1,0 +1,25 @@
+# Core Data Manipulation & Numerical Computing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# HTTP Requests & API Integration
+requests>=2.31.0
+
+# Database Connectivity & ORM
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Geospatial Processing & GIS
+geopandas>=0.14.0
+shapely>=2.0.0
+
+# Data Visualization & Interactive Dashboard
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# Workflow Orchestration
+# Note: On production/Linux setups, Apache Airflow is typically installed with constraint files.
+apache-airflow>=2.8.0
+
+# Testing & Quality
+pytest>=7.4.0
