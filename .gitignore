@@ -85,6 +85,8 @@ data/staging/*
 !data/staging/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/rejected/*
+!data/rejected/.gitkeep
 
 # Exclude large dump files or archives
 *.zip
