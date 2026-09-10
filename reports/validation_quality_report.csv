@@ -1,0 +1,16 @@
+dataset,rule,total_records,passed,failed,pass_rate_percent
+collisions,collision_index_not_null,513801,513801,0,100.0
+collisions,latitude_valid,513801,513748,53,99.99
+collisions,longitude_valid,513801,513748,53,99.99
+collisions,date_valid,513801,513801,0,100.0
+collisions,severity_valid,513801,513801,0,100.0
+collisions,number_of_vehicles_valid,513801,513801,0,100.0
+collisions,number_of_casualties_valid,513801,513801,0,100.0
+vehicles,collision_index_not_null,937265,937265,0,100.0
+vehicles,vehicle_reference_valid,937265,937265,0,100.0
+vehicles,age_of_driver_valid,937265,937265,0,100.0
+vehicles,age_of_vehicle_valid,937265,937265,0,100.0
+casualties,collision_index_not_null,652821,652821,0,100.0
+casualties,casualty_reference_valid,652821,652821,0,100.0
+casualties,age_of_casualty_valid,652821,652821,0,100.0
+casualties,casualty_severity_valid,652821,652821,0,100.0
