@@ -96,3 +96,7 @@ data/processed/*
 *.sqlite
 *.sqlite3
 *.log
+
+# Exclude Context and agent files
+AGENTS.md
+PROJECT_CONTEXT.md

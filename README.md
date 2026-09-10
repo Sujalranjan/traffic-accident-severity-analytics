@@ -206,3 +206,25 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 *(Note: Apache Airflow installation on local environments may require specific constraint files depending on your OS and Python version).*
+
+### 4. Dashboard Analytics
+The `1CR23AI132` dashboard analytics module expects a mart-ready dataset exported to:
+
+```bash
+data/processed/dashboard_analytics.csv
+```
+
+or a PostgreSQL relation configured with:
+
+```bash
+DATABASE_URL=postgresql+psycopg2://user:password@host:5432/database
+DASHBOARD_ANALYTICS_TABLE=analytics.dashboard_analytics
+```
+
+Run the Streamlit dashboard after installing dependencies:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+See `docs/dashboard_analytics_contract.md` for the required and optional dashboard input columns.
