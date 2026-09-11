@@ -210,3 +210,18 @@ UK Department for Transport
                 │
                 ▼
        PostgreSQL / PostGIS
+
+Weather enrichment:
+
+Accident Date + Time
+        +
+Latitude + Longitude
+        │
+        ▼
+Open-Meteo Historical Weather API
+        │
+        ▼
+Weather Enrichment
+        │
+        ▼
+Analytical Dataset

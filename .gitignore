@@ -1,4 +1,4 @@
-# Prevent committing sensitive credentials & environment variables
+git status# Prevent committing sensitive credentials & environment variables
 .env
 .env.local
 .env.*.local
