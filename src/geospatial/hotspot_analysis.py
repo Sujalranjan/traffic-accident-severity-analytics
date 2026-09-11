@@ -157,7 +157,12 @@ def create_hotspot_table_sql() -> str:
 
 
 def refresh_hotspot_grid_sql() -> str:
-    """Replace hotspot grid contents with a fresh aggregation."""
+    """Replace hotspot grid contents with a fresh aggregation.
+
+    ``build_hotspot_grid_sql()`` also exposes ``latitude`` / ``longitude``
+    aliases for analysis consumers. Those aliases are not table columns, so
+    the INSERT projects only the ``spatial_hotspot_grid`` contract.
+    """
     return f"""
         TRUNCATE TABLE {HOTSPOT_TABLE};
 
@@ -170,7 +175,17 @@ def refresh_hotspot_grid_sql() -> str:
             hotspot_score,
             computed_at
         )
-        {build_hotspot_grid_sql()}
+        SELECT
+            grid_cell_id,
+            grid_lon,
+            grid_lat,
+            geom,
+            accident_count,
+            hotspot_score,
+            computed_at
+        FROM (
+            {build_hotspot_grid_sql()}
+        ) AS hotspot_source
     """
 
 
